@@ -87,7 +87,7 @@ function init() {
   inquirer.prompt(questions).then((answeredQuestions) => {
     console.log(answeredQuestions);
     let readMeString = "";
-    readMeString += `# ${answeredQuestions.title}`;
+    readMeString += `# ${answeredQuestions.title}` ;
     let licenseVar = answeredQuestions.license;
     if (answeredQuestions.license == "MIT") {
       answeredQuestions.license = "MIT-yellow";
@@ -119,6 +119,12 @@ function init() {
     if (answeredQuestions.license == "Eclipse 1.0") {
       answeredQuestions.license = "EPL_1.0-red";
     }
+    if (answeredQuestions.license == "Mozilla 2.0") {
+      answeredQuestions.license = "MPL_2.0-brightgreen";
+    }
+    if (answeredQuestions.license == "The Unlicense") {
+      answeredQuestions.license = "Unlicense-blue";
+    }
 
     readMeString += `![License](https://img.shields.io/badge/License-${answeredQuestions.license}.svg)`;
 
@@ -140,11 +146,9 @@ function init() {
     readMeString += `## License \n\n`;
     readMeString += `${licenseVar}\n\n`;
 
-    console.log(readMeString);
+    //console.log(readMeString);
 
-    writeToFile("readMe2.md", readMeString);
+    writeToFile("readMe3.md", readMeString);
   });
 }
 
-// Function call to initialize app
-init();
