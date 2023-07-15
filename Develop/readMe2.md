@@ -1,8 +1,32 @@
-# asdfudskaf
+# A![License](https://img.shields.io/badge/License-MIT-blue.svg)
 
 ## Description 
 
-uiogbhvasp
- ## License 
+B
 
-![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
+ ## Installation  
+
+B 
+
+## Usage 
+
+C 
+
+## Contributing 
+
+C 
+
+## Tests 
+
+C 
+
+## Questions 
+
+https://github.com/Claytonlax
+
+Claytonlax@yahoo.com + 'Please email me here with any further questions.'
+
+## License 
+
+MIT
+
