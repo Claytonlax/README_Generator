@@ -1,9 +1,9 @@
-// TODO: Include packages needed for this application
+// Packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
 const path = require("path");
 
-// TODO: Create an array of questions for user input
+// An array of questions for user input
 const questions = [
   {
     message: "Project Title",
@@ -36,11 +36,6 @@ const questions = [
     ],
   },
 
-  // {
-  //   message:"Table of Contents",
-  //   type:"input",
-  //   name: 'table of contents',
-  // },
   {
     message: "Installation Instructions",
     type: "input",
@@ -75,19 +70,19 @@ const questions = [
   },
 ];
 
-// TODO: Create a function to write README file
+// The Function that writes the README file
 function writeToFile(fileName, data) {
   fs.writeFile(fileName, data, (err) =>
     err ? console.log(err) : console.log("Successfully created README.md")
   );
 }
 
-// TODO: Create a function to initialize app
+// TODO: The Function that initializes the app
 function init() {
   inquirer.prompt(questions).then((answeredQuestions) => {
     console.log(answeredQuestions);
     let readMeString = "";
-    readMeString += `# ${answeredQuestions.title}` ;
+    readMeString += `# ${answeredQuestions.title}`;
     let licenseVar = answeredQuestions.license;
     if (answeredQuestions.license == "MIT") {
       answeredQuestions.license = "MIT-yellow";
@@ -148,7 +143,8 @@ function init() {
 
     //console.log(readMeString);
 
-    writeToFile("readMe3.md", readMeString);
+    writeToFile("NewREADMe.md", readMeString);
   });
 }
-
+// Calling the initilize function
+init();
