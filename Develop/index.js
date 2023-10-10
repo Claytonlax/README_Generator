@@ -143,7 +143,7 @@ function init() {
 
     //console.log(readMeString);
 
-    writeToFile("NewREADMe.md", readMeString);
+    writeToFile("NewREADME.md", readMeString);
   });
 }
 // Calling the initilize function
