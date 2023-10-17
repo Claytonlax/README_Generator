@@ -6,7 +6,7 @@ This project is a command line application that helps the usercreate README file
 
  ## Installation  
 
-In order to properly install, open and integrated terminal from the package.json file. Run npm install the install the required node modules. From there, open a new integrated terminal in the index.js file. Run the node index.js command. You are no in your README generator application. 
+In order to properly install, open and integrated terminal from the package.json file. Run npm install the install the required node modules. From there, open a new integrated terminal in the index.js file. Run the node index.js command. You are now in your README generator application. 
 
 ## Usage 
 
